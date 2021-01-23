@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: "Raleway",sans-serif;
+    background: black;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 100vh;
+    position: relative;
+}
+.cover{
+    height: 100%;
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: top;
+}
+.nav-images{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.nav-images img{
+    height: 250px;
+}
+#cover-date{
+    left: 10%;
+    right: 10%;
+    color: white;
+    bottom: 10%;
+    position: absolute;
+    opacity: 0.7;
+}
+nav{
+    background: white;
+    width: 40%;
+    height: 20%;
+    z-index: 2;
+    color: #916345;
+    /* position: absolute; */
+    /* overflow: hidden; */
+}
+.nav-closed{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 40%;
+    position: absolute;
+}
+.nav-closed ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-open{
+    z-index: 2;
+    height: 80%;
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clothing{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.clothing h2{
+    font-size: 50px;
+}
+.clothing ul li{
+    padding-bottom: 10px;
+}
+.clothing ul{
+    list-style: none;
+}
+.clothing ul li a{
+    color: #916356;
+}
